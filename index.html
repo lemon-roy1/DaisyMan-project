@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" data-thame="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dasiyman</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'hero-bg': "url('./images/yellow-bg.jpg')"
+                    }
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <!-- navber -->
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-xl">daisyman</a>
+            </div>
+            <div class="flex-none">
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <div class="indicator">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                            <span class="badge badge-sm indicator-item">8</span>
+                        </div>
+                    </label>
+                    <div tabindex="0" class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow">
+                        <div class="card-body">
+                            <span class="font-bold text-lg">8 Items</span>
+                            <span class="text-info">Subtotal: $999</span>
+                            <div class="card-actions">
+                                <button class="btn btn-primary btn-block">View cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img src="./images/avatar.png" />
+                        </div>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li>
+                            <a class="justify-between">
+                                Profile
+                                <span class="badge">New</span>
+                            </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- hero section -->
+
+        <section>
+            <div class="hero min-h-[calc(100vh-66px)] bg-hero-bg">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                            exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button class="btn rounded-[1.5rem]">shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- categorice section -->
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 my-10 py-5 ">
+        <div class="text-center pb-5">
+            <h1 class="text-2xl md:text-4xl">Huge collcetion</h1>
+            <p class="text-md">browes form a various collections </p>
+        </div>
+        <!-- card  -->
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-[2rem]">
+            <div>
+                <div class="card  bg-base-100 shadow-xl image-full">
+                    <figure><img src="./images/hoodises.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title uppercase">hoodise</h2>
+                        <p>At daisy,we belive that style is a reliection of your unique personaity and miission is to
+                            provider you with a diverse and trondly collcetion.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn rounded-[1.5rem] uppercase">explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card  bg-base-100 shadow-xl image-full">
+                    <figure><img src="./images/shose.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title uppercase">hoodise</h2>
+                        <p>At daisy,we belive that style is a reliection of your unique personaity and miission is to
+                            provider you with a diverse and trendy collcetion.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn rounded-[1.5rem] uppercase">explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card  bg-base-100 shadow-xl image-full">
+                    <figure><img src="./images/perfumes.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title uppercase">perfume</h2>
+                        <p>At daisy,we belive that style is a reliection of your unique personaity and miission is to
+                            provider you with a diverse and trondly collcetion.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn rounded-[1.5rem] uppercase">explore</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features section  -->
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 my-10 py-5 ">
+        <div class="flex flex-col md:flex-row gap-10 items-center">
+            <div class="flex-1">
+                <div>
+                    <h1 class="uppercase text-2lx md:text-3xl font-bold mb-4">easy-purchase</h1>
+                    <p class="text-2lx">we belive that style is a reliection of your unique personaity and miission is
+                        to provider you with a diverse and trondly collcetion. <br> our mission is to provide you with a
+                        diverese and tredy collcetion </p>
+                </div>
+            </div>
+            <div class="flex-1">
+                <img src="./images/easy-purchase.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+    <!-- product section -->
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 my-10 py-5 ">
+        <div class="text-center pb-5">
+            <h1 class="text-2xl md:text-4xl">Top Products</h1>
+            <p class="text-md">browes form a various collections </p>
+        </div>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+            <div class="card  bg-base-100 shadow-xl">
+                <figure><img src="./images/hoodises.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card  bg-base-100 shadow-xl">
+                <figure><img src="./images/nimble-made-7RIMS-NMsbc-unsplash.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card  bg-base-100 shadow-xl">
+                <figure><img src="./images/perfumes.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card  bg-base-100 shadow-xl">
+                <figure><img src="./images/shirt.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title">Shoes!</h2>
+                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- accedion  scetion -->
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 my-10 py-5 ">
+        <div class="text-center pb-5">
+            <h1 class="text-2xl md:text-4xl">Frequently Asked Question</h1>
+            <p class="text-md">qustion and short Anser</p>
+        </div>
+
+        <div class="collapse collapse-plus bg-base-200 mb-2">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+                whta is javascript?
+            </div>
+            <div class="collapse-content">
+                <p>JavaScript is a popular programming language primarily used for web development. It allows you to add
+                    interactivity, manipulate web page content, and create dynamic web applications. It's often
+                    abbreviated as "JS."</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200 mb-2">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+                what is dom in javascript ?
+            </div>
+            <div class="collapse-content">
+                <p>DOM stands for "Document Object Model." In JavaScript, it refers to a programming interface for web
+                    documents. It represents the structure of an HTML or XML document as a tree-like structure, allowing
+                    developers to access and manipulate the elements and content of a web page dynamically.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200 mb-2">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+                how do you jsx are js
+            </div>
+            <div class="collapse-content">
+                <p>JSX is an abbreviation for "JavaScript XML." It is a syntax extension for JavaScript often used with
+                    React, a popular JavaScript library for building user interfaces. JSX allows developers to write
+                    HTML-like code within JavaScript, making it easier to create and manage UI elements in web
+                    applications. So, JSX and JavaScript are closely related, with JSX being a specific syntax used
+                    within JavaScript for creating user interfaces.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200 mb-2">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+                what is mongodb ?
+            </div>
+            <div class="collapse-content">
+                <p>MongoDB is a NoSQL database system that stores data in flexible, JSON-like documents and is known for
+                    its scalability and versatility.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+                what is SQL ?
+            </div>
+            <div class="collapse-content">
+                <p>SQL stands for "Structured Query Language." It is a domain-specific programming language used for
+                    managing and manipulating relational databases.</p>
+            </div>
+        </div>
+    </section>
+    <!-- footer section-->
+    <footer class="footer p-[5rem] bg-neutral text-neutral-content justify-around">
+        <nav>
+            <img class="object-cover w-16 h-16 rounded-full"
+            src="./images/logo.png"
+            alt="img">
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+        </nav>
+        <nav>
+            <header class="footer-title">Company</header>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>        
+        </nav>
+        <nav>
+            <header class="footer-title">Legal</header>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
+        
+        
+    </footer>
+</body>
+
+</html>
